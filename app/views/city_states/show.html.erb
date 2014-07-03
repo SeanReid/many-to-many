@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>City:</strong>
+  <%= @city_state.city_id %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @city_state.state_id %>
+</p>
+
+<%= link_to 'Edit', edit_city_state_path(@city_state) %> |
+<%= link_to 'Back', city_states_path %>

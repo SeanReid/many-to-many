@@ -1,0 +1,14 @@
+<div class="h1">
+  <h1>Same Cities In Different States</h1>
+  <p>This is a few cities that share the same name and showing what states they are located in.</p>
+</div>
+<div class="h2">
+  <% @cities.each do |city| %>
+  <h2><%= city.name %></h2>
+  <ul>
+    <% cities.states.each do |state| %>
+      <li><%= state.name %></li>
+    <% end %>
+  </ul>
+<% end %>
+</div>
