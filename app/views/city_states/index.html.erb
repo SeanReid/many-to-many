@@ -1,14 +1,27 @@
-<div class="h1">
-  <h1>Same Cities In Different States</h1>
-  <p>This is a few cities that share the same name and showing what states they are located in.</p>
-</div>
-<div class="h2">
-  <% @cities.each do |city| %>
-  <h2><%= city.name %></h2>
-  <ul>
-    <% cities.states.each do |state| %>
-      <li><%= state.name %></li>
+<h1>Listing city_states</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>City</th>
+      <th>State</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @city_states.each do |city_state| %>
+      <tr>
+        <td><%= city_state.city %></td>
+        <td><%= city_state.state %></td>
+        <td><%= link_to 'Show', city_state %></td>
+        <td><%= link_to 'Edit', edit_city_state_path(city_state) %></td>
+        <td><%= link_to 'Destroy', city_state, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
     <% end %>
-  </ul>
-<% end %>
-</div>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New City state', new_city_state_path %>

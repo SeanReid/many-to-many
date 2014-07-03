@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
+  resources :city_states
+
+  resources :cities
+
+  resources :states
+
   # resources :city_states
   #
   # resources :states
   #
   # resources :cities
-  root to: "city_states#index"
+  root to: "something#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
