@@ -1,28 +1,10 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Day 18 hw at The Iron Yard
+=======================
+This was the first use of a join table in the database.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+1. Recreate the library example (many to many), but use on of the examples below
+2. Use db-seed to create the data
+3. Create a page on "/" and display the data (loops)
+4. explain what your example is on the page
+
